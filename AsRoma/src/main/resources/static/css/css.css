@@ -1,0 +1,53 @@
+.textColor{
+    color: darkred ;
+}
+
+.textNav{
+    color: #FFFFE0 !important;
+    transition: color 0.3s;
+}
+
+.textNav:hover{
+    color: yellow !important;;
+}
+
+.carousel-item {
+    height: 50vh; /* Modifica l'altezza del carosello */
+}
+
+.carousel-item img {
+    max-height: 100%; /* Mantiene le proporzioni senza schiacciare l'immagine */
+    max-width: 80%; /* Limita la larghezza dell'immagine per ridimensionarla */
+    object-fit: contain; /* Adatta l'immagine all'area del carosello */
+    margin: auto; /* Centra l'immagine */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    top: 50%; /* Posiziona i controlli al centro in altezza */
+    transform: translateY(-50%); /* Centra verticalmente i controlli */
+    width: 5%; /* Imposta la larghezza dei controlli */
+    height: auto; /* Altezze automatiche */
+    background-color: rgba(255, 255, 255, 0.7); /* Sfondo traslucido per i controlli */
+    border-radius: 50%; /* Bordo arrotondato per i controlli */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Colore dell'icona per migliorare la visibilità */
+    border-radius: 50%; /* Bordo arrotondato per le icone */
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(255, 255, 255, 1); /* Cambia colore al passaggio del mouse */
+}
+
+.back{
+    background-color: #FFFFE0  !important;
+}
+
+.backRosso{
+    background-color: darkred  !important;
+}
+
+.textGiallo{
+    color: #FFFFE0;
+}

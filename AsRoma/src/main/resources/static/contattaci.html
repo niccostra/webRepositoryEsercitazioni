@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AS Roma fanpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+<header class="p-3 mb-4 backRosso">
+    <div class="container">
+        <h1 class="text-center header-text textGiallo">AS Roma</h1>
+        <p class="text-center textGiallo">AS Roma Fanpage</p>
+        <nav class="text-center textGiallo">
+            <ul class="nav justify-content-center">
+                <li class="nav-item ">
+                    <a class="nav-link textNav"  href="home.html">Homepage</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link textNav" href="trofei.html">Trofei</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link textNav" href="contattaci.html">Contattaci</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<main class="container">
+    <div class="alert alert-danger back textColor text-center" role="alert">
+        Contatta l'AS Roma!!
+    </div>
+    <form action="/submitQuestion.jsp" class="row g-3 textColor">
+        <h5>Le tue info:</h5>
+
+        <div class="col-md-6">
+            <label for="fname" class="form-label">Nome:</label>
+            <input type="text" id="fname" class="form-control">
+        </div>
+        <div class="col-md-6">
+            <label for="lname" class="form-label">Cognome:</label>
+            <input type="text" id="lname" class="form-control">
+        </div>
+
+        <div class="col-md-12">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" class="form-control">
+        </div>
+
+        <div class="col-md-12">
+            <label for="birthday" class="form-label">Data di Nascita:</label>
+            <input type="date" id="birthday" name="birthday" class="form-control">
+        </div>
+
+        <h5>Altre info:</h5>
+        <div class="accordion" id="additionalInfoAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button custom-accordion-button textColor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Aggiungi un file testo
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                     data-bs-parent="#additionalInfoAccordion">
+                    <div class="accordion-body">
+                        <label for="cvFile" class="form-label textColor">Carica il tuo file testo:</label>
+                        <input type="file" id="cvFile" name="cvFile" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <label for="question" class="form-label">Contatta l'AS Roma:</label>
+            <textarea name="question" id="question" class="form-control"></textarea>
+        </div>
+
+        <div class="col-md-12 text-center mt-3">
+            <input type="submit" value="Invia" class="btn btn-danger custom-submit-button me-2">
+
+            <input type="reset" value="Clear" class="btn btn-secondary">
+        </div>
+    </form>
+</main>
+<footer class="text-center p-3 mt-4 textGiallo backRosso">
+    <p>2024 - Niccolò Stranges - Unical - All Rights Reserved</p>
+</footer>
+
+
+</body>
+</html>
